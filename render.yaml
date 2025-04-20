@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: vinted-discord-bot
+    runtime: python
+    buildCommand: bash render-build.sh
+    startCommand: bash start.sh
+    envVars:
+      - key: PLAYWRIGHT_BROWSERS_PATH
+        value: 0
+    buildFilter:
+      paths:
+        - ./*
+    plan: free
