@@ -1,4 +1,7 @@
-#!/usr/bin/env bash
-echo "📦 Installation de Playwright..."
-pip install playwright
-playwright install chromium
+#!/bin/bash
+
+echo "▶ Installing dependencies from requirements.txt..."
+pip install -r requirements.txt
+
+echo "▶ Installing Playwright browsers..."
+npx playwright install --with-deps
