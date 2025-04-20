@@ -5,7 +5,7 @@ import requests
 from playwright.async_api import async_playwright
 
 WEBHOOK_URL = "https://discord.com/api/webhooks/1363273647405535367/4wsu0gD9w3MH8k6CepFeKf4R7iPinkUi8CtZrnVXU9TwHzuYOPPM5QDyiKevK1QrPXkv"
-VINTED_URL = "https://www.vinted.fr/catalog?time=1745098530&disabled_personalization=true&catalog_from=0&page=1&order=newest_first"
+VINTED_URL = "https://www.vinted.fr/catalog?time=1745141217&disabled_personalization=true&page=1&order=newest_first&search_text=birkenstock&price_to=20.00&currency=EUR&status_ids[]=2&status_ids[]=3&status_ids[]=4&brand_ids[]=3203&size_ids[]=776&size_ids[]=777&size_ids[]=778&size_ids[]=780&size_ids[]=781&size_ids[]=782&size_ids[]=783&size_ids[]=784&size_ids[]=785&size_ids[]=786&size_ids[]=787&size_ids[]=788&size_ids[]=56&size_ids[]=57&size_ids[]=1196&size_ids[]=1197&size_ids[]=58&size_ids[]=1198&size_ids[]=59&size_ids[]=1199&size_ids[]=60&size_ids[]=1200&size_ids[]=61&size_ids[]=1201&size_ids[]=62&size_ids[]=63"
 SEEN_FILE = "seen_annonces.json"
 
 async def fetch_annonces():
